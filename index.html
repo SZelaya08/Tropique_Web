@@ -129,6 +129,8 @@ html { scrollbar-color: var(--color-ink-2) var(--color-paper); scroll-behavior: 
 .btn--plain { min-height: 44px; padding: var(--space-sm) 0 var(--space-2xs); border-radius: 0; background: none; color: inherit; border-bottom: var(--rule-bar) solid currentColor; box-shadow: none; }
 .btn--plain:hover { background: none; color: inherit; border-bottom-color: var(--color-accent); box-shadow: none; }
 .hero .btn--plain:hover, .events .btn--plain:hover { border-bottom-color: var(--color-gold); }
+.hero__actions .btn--plain { min-height: 52px; padding: 0 var(--space-xl); border-radius: var(--radius-pill); border-bottom: 0; background: color-mix(in oklab, var(--color-gold) 22%, transparent); border: 1.5px solid color-mix(in oklab, var(--color-gold) 70%, transparent); color: var(--color-on-dark); box-shadow: none; }
+.hero__actions .btn--plain:hover { background: color-mix(in oklab, var(--color-gold) 36%, transparent); border-color: var(--color-gold); color: var(--color-on-dark); }
 
 /* ---------- hero: the logo over the terrace ---------- */
 .hero { position: relative; isolation: isolate; display: grid; align-items: end; min-height: 100dvh; color: var(--color-on-dark); background: var(--color-ink); overflow: clip; }
@@ -417,7 +419,7 @@ main:focus { outline: none; }
           <p class="lead">Pizza, hamburguesas veganas y cocina mexicana, al aire libre en Villa Campestre.</p>
           <div class="hero__actions">
             <a class="btn" href="reservar.html" target="_blank" rel="noopener" data-wa data-wa-source>Reservar por WhatsApp</a>
-            <a class="btn btn--plain" href="#lugar">Ver el lugar</a>
+            <a class="btn btn--plain" href="menu.html">Menú</a>
           </div>
         </div>
         <ul class="hero__facts">
